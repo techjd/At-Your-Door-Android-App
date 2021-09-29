@@ -1,0 +1,40 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView4"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/cardView2"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+
+        <TextView
+            android:id="@+id/groceryItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="@font/regular"
+            android:gravity="left"
+            android:text="GroceryList"
+            android:textColor="#000000"
+            android:textSize="23dp" />
+
+        <ImageView
+            android:id="@+id/editItem"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+
+            app:srcCompat="@drawable/ic_edit" />
+
+
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="3dp"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/shopCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:background="@drawable/shop_layout_border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/circletransparent"
+                    app:srcCompat="@drawable/ic_not_bookmarked" />
+            </LinearLayout>
+
+            <ImageView
+
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:id="@+id/shopImage"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:fontFamily="@font/bold"
+                android:layout_gravity="center"
+                android:id="@+id/shopName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left"
+                android:text="Shop Name"
+                android:textColor="#000000"
+                android:textSize="30dp" />
+
+            <TextView
+                android:fontFamily="@font/regular"
+                android:layout_gravity="center"
+                android:id="@+id/shopAddress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left"
+                android:text="Shop Address"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

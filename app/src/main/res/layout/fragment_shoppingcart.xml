@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white">
+
+    <include
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_below="@+id/toolbar"
+        android:gravity="center"
+        android:padding="10dp"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:fontFamily="@font/bold"
+
+            android:textSize="20sp"
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="Total Price = " />
+
+        <TextView
+            android:fontFamily="@font/bold"
+            android:textSize="20sp"
+            android:id="@+id/totalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+
+            tools:text="100"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/linearLayout"
+        android:layout_above="@+id/payPart"
+        android:id="@+id/cartRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/payPart"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+
+            android:background="@drawable/item_add_cart"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/bold"
+            android:id="@+id/checkout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CHECKOUT" />
+    </LinearLayout>
+
+    <TextView
+
+        android:id="@+id/noCartAvailable"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/mm"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        tools:text="Why You Don't Have Anything In Cart 😪 !!! \n \n Maybe Add Something 😄!! " />
+
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@drawable/searchview"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:textColor="@color/black"
+            android:fontFamily="@font/bold"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:id="@+id/enterProductTile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Your Address" />
+
+        <EditText
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:id="@+id/edtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="#000000"
+            android:fontFamily="@font/regular"
+            android:inputType="textPersonName"
+            android:hint="Enter Your Address" />
+
+
+        <EditText
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:id="@+id/edtPinCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="#000000"
+            android:fontFamily="@font/regular"
+            android:inputType="textPersonName"
+            android:hint="Your Pincode" />
+
+        <EditText
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:id="@+id/edtCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="#000000"
+            android:fontFamily="@font/regular"
+            android:inputType="textPersonName"
+            android:hint="City" />
+
+        <EditText
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:id="@+id/edtState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="#000000"
+            android:fontFamily="@font/regular"
+            android:inputType="textPersonName"
+            android:hint="State" />
+
+
+
+        <LinearLayout
+            android:layout_marginTop="13dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:background="@drawable/item_add_cart"
+                android:fontFamily="@font/bold"
+                android:padding="10dp"
+                android:text="CANCEL"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/addAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/item_add_cart"
+                android:fontFamily="@font/bold"
+                android:padding="10dp"
+                android:text="UPDATE ADDRESS"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

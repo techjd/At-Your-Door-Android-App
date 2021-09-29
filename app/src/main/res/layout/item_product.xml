@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        app:cardUseCompatPadding="true"
+        android:elevation="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:padding="10dp"
+                    android:id="@+id/productImage"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:gravity="left"
+                        android:textColor="#000000"
+                        android:textSize="30dp"
+                        android:fontFamily="@font/regular"
+                        android:id="@+id/productName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Product Name" />
+
+                    <TextView
+                        android:gravity="left"
+                        android:textSize="20dp"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/regular"
+                        android:id="@+id/productPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Product Price" />
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <Button
+
+                            android:fontFamily="@font/bold"
+                            android:textColor="#ffffff"
+                            android:background="@drawable/item_add_cart"
+                            android:layout_centerInParent="true"
+                            android:id="@+id/addToCart"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="ADD" />
+
+                        <LinearLayout
+
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageButton
+                                android:id="@+id/remove"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                app:srcCompat="@drawable/ic_remove" />
+
+                            <TextView
+
+                                android:gravity="center"
+                                android:textSize="20dp"
+                                android:id="@+id/Number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+
+                                android:text="" />
+
+                            <ImageButton
+                                android:id="@+id/add"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                app:srcCompat="@drawable/ic_add" />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

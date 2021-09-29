@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.Activities.LocatingLocationActivity">
+
+    <include
+        layout="@layout/toolbar" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/toolbar"
+        android:id="@+id/animationView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:lottie_fileName="paperplane.json"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+
+    <TextView
+        android:id="@+id/placed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/animationView"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/regular"
+        android:gravity="center"
+        android:text="LOCATING YOUR LOCATION"
+        android:textColor="#000000"
+        android:textSize="35dp" />
+
+</RelativeLayout>
